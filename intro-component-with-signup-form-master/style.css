@@ -15,7 +15,6 @@
 }
 
 .container {
-  border: 2px solid red;
   display: flex;
   background-image: url('images/bg-intro-desktop.png');
   background-size: cover;
@@ -135,4 +134,32 @@
 
 .terms-of-service span {
   color: var(--Red);
+}
+
+@media (max-width: 768px) {
+  .container {
+    background-image: url('images/bg-intro-mobile.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    height: 100%;
+  }
+  .container .content {
+    width: 100%;
+    flex-direction: column;
+    padding: 10%;
+  }
+  .container .content .left {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .container .content .right {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
