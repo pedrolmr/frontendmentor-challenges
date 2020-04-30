@@ -1,0 +1,123 @@
+:root {
+  /*Colors*/
+
+  /*Primary*/
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --DarkGreen: hsl(154, 58%, 45%);
+
+  /*Accent*/
+  --Blue: hsl(248, 32%, 49%);
+
+  /*Neutral*/
+  --DarkBlue: hsl(249, 10%, 26%);
+  --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+.container {
+  border: 2px solid red;
+  display: flex;
+  background-image: url('images/bg-intro-desktop.png');
+  background-color: var(--Red);
+  justify-content: center;
+  height: 100vh;
+}
+
+.container .content {
+  border: 2px solid blue;
+  display: flex;
+  width: 70%;
+}
+
+.container .content .left {
+  border: 2px solid orange;
+  width: 50%;
+}
+
+.container .content .right {
+  /* border: 8px solid sienna; */
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.container .content .right .trial {
+  width: 100%;
+  background-color: var(--Blue);
+  padding: 3.5% 0;
+  margin-bottom: 5%;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+.container .content .right .trial span {
+  font-weight: 200;
+}
+.container .content .right .form {
+  display: flex;
+  /* border: 5px solid pink; */
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8% 0;
+  border-radius: 2%;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+
+.container .content .right .form form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  /* border: 1px solid black; */
+}
+
+.container .content .right .form form input {
+  border: none;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+  padding: 3.5%;
+  margin-bottom: 5%;
+  outline: none;
+}
+.container .content .right .form form input:focus {
+  border: 1px solid var(--Blue);
+}
+
+.container .content .right .form form input::placeholder {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.container .content .right .form form button {
+  padding: 3%;
+  background-color: var(--Green);
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  /* font-size: 0.9rem; */
+  /* letter-spacing: 2px; */
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-bottom: 3px solid var(--DarkGreen);
+  outline: none;
+}
+.terms-of-service {
+  font-size: 0.6rem;
+  /* border: 3px solid black; */
+  padding: 2%;
+  margin-top: 2%;
+  color: rgb(199, 199, 199);
+}
+
+.terms-of-service span {
+  color: var(--Red);
+}
