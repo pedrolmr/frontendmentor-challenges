@@ -3,8 +3,8 @@ const firstname = document.getElementById('firstname');
 const lastname = document.getElementById('lastname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const inputs = document.querySelectorAll('.form form .input-container input');
-const singleInput = document.querySelector('.form form .input-container input');
+// const inputs = document.querySelectorAll('.form form .input-container input');
+// const singleInput = document.querySelector('.form form .input-container input');
 
 const showError = (input, message) => {
   if (!input.classList.contains('input-error')) {
@@ -31,6 +31,7 @@ const showSuccess = (input, message) => {
 
     input.nextSibling.classList.remove('fa-exclamation-circle');
     input.nextSibling.nextSibling.innerText = '';
+    input.style.marginBottom = '';
   }
 };
 
