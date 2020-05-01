@@ -25,7 +25,7 @@ const showError = (input, message) => {
 
 const showSuccess = (input, message) => {
   if (input.classList.contains('input-error')) {
-    input.style.border = '1px solid hsl(154, 59%, 51%)';
+    input.style.border = '1px solid rgb(222, 222, 222)';
 
     input.nextSibling.classList.remove('fa-exclamation-circle');
     input.nextSibling.nextSibling.innerText = '';
