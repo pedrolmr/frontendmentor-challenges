@@ -3,8 +3,6 @@ const firstname = document.getElementById('firstname');
 const lastname = document.getElementById('lastname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-// const inputs = document.querySelectorAll('.form form .input-container input');
-// const singleInput = document.querySelector('.form form .input-container input');
 
 const showError = (input, message) => {
   if (!input.classList.contains('input-error')) {
@@ -37,13 +35,11 @@ const showSuccess = (input, message) => {
 
 const checkEmail = (input) => {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  //   return re.test(String(email).toLowerCase());
 
   if (re.test(input.value.trim())) {
     showSuccess(input);
   } else {
     showError(input, 'Looks like this is not an email');
-    // showError(input);
   }
 };
 

@@ -24,13 +24,11 @@
 }
 
 .container .content {
-  /* border: 2px solid blue; */
   display: flex;
   width: 75%;
 }
 
 .container .content .left {
-  /* border: 2px solid orange; */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -49,7 +47,6 @@
   font-size: 0.9rem;
 }
 .container .content .right {
-  /* border: 8px solid sienna; */
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -75,7 +72,6 @@
 }
 .container .content .right .form {
   display: flex;
-  /* border: 5px solid pink; */
   flex-direction: column;
   align-items: center;
   align-content: center;
@@ -91,39 +87,22 @@
   display: flex;
   flex-direction: column;
   width: 85%;
-  /* border: 1px solid black; */
 }
 .container .content .right .form form .input-container {
-  /* border: 1px solid black; */
   position: relative;
   margin-bottom: 2%;
 }
-/* .container
-  .content
-  .right
-  .form
-  form
-  .input-container
-  i.fas.fa-exclamation-circle {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: var(--Red);
-  visibility: hidden;
-} */
 
 .fa-exclamation-circle {
   position: absolute;
   top: 10px;
   right: 15px;
   color: var(--Red);
-  /* visibility: hidden; */
 }
 
 .container .content .right .form form .input-container input {
   border: none;
   border: 1px solid rgb(222, 222, 222);
-  /* border: 1px solid hsl(0, 100%, 74%); */
   border-radius: 5px;
   padding: 3.5%;
   width: 100%;
@@ -163,7 +142,6 @@
 
 .container .content .right .form .terms-of-service {
   font-size: 0.6rem;
-  /* border: 3px solid black; */
   padding: 2% 0;
   margin-top: 2%;
   width: 85%;
@@ -191,8 +169,6 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    /* height: 100vh; */
-    /* height: 100%; */
     height: 100vh;
   }
 
